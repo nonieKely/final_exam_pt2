@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Oxygen";
+    font-size: 0.9 rem;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3vh;
+}
+
+.logo{
+    height: 75px;
+}
+
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -2vh; 
+}
+
+.left a{
+    text-decoration: none;
+    color: rgb(133, 52, 209);
+}
+
+
+.buttons{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 1vw;
+    width: 40%;
+    margin-right: 6vw;
+}
+
+.buttons button{
+    
+    font-size:1rem;
+}
+
+.contact{
+    border: none;
+    background-color: rgb(166, 79, 248);
+    width: 150px;
+    height: 40px;
+    
+}
+
+.contact p{
+    color: white;
+}
+
+.reserver{
+    width: 120px;
+    height: 40px;
+    color: rgb(166, 79, 248);
+    border: 2px solid rgb(166, 79, 248);
+    background-color: transparent;  
+}
+
+.reserver p{
+    color: rgb(166, 79, 248);
+}
+
