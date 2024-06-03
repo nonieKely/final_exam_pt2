@@ -14,6 +14,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     margin-top: 3vh;
+    background-color: transparent;
 }
 
 .logo{
@@ -34,6 +35,12 @@ body{
     color: rgb(133, 52, 209);
 }
 
+.left a:hover,
+.buttons button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 
 .buttons{
     
@@ -42,7 +49,7 @@ body{
     justify-content: end;
     gap: 1vw;
     width: 40%;
-    margin-right: 6vw;
+    margin-right: 4vw;
 }
 
 .buttons button{
@@ -65,12 +72,111 @@ body{
 .reserver{
     width: 120px;
     height: 40px;
-    color: rgb(166, 79, 248);
-    border: 2px solid rgb(166, 79, 248);
+    border: 2px solid white;
     background-color: transparent;  
 }
 
 .reserver p{
-    color: rgb(166, 79, 248);
+    color: white;
 }
 
+#index{
+    display: flex;
+    flex-direction: row;
+}
+.left_side{
+    width: 50%;
+    padding-left: 5vw;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 3vh;
+}
+
+.tittle{
+    font-size: 3vw;
+    animation: intro_text 1.2s;
+}
+
+
+.description{
+    width: 70%;
+    animation: intro_text 1.2s;
+}
+
+.more button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: rgb(226, 63, 204);
+    animation: intro_text 1.2s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.more p{
+    color: white;
+    background-color: transparent;
+    text-decoration-line: none; 
+    font-size: 1rem;
+}
+
+.container_image{
+    position: relative;
+    z-index: -2;
+    margin-top:-15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url(images/EXTERIEUR_01.JPG);
+    background-size: 850px;
+    height: 95vh;
+    width: 100%;
+    box-shadow: 4px 8px 20px 1px grey;
+    animation: intro_image 2s;
+    
+}
+
+.container_image img{
+
+    height: 20px;
+}
+
+.research_section{
+    background-color: white;
+    height: 80px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+
+@keyframes intro_image{
+    0%{
+        margin-top: -95vh;
+    }40%{
+        margin-top: -15vh;
+    }
+    60%{
+        margin-top: -25vh;
+    }
+    100%{
+        margin-top: -15vh;
+    }
+}
+
+@keyframes intro_text{
+    from{
+        margin-left: -50vw;
+    }to{
+        margin-left: 0vw;
+    }
+}
