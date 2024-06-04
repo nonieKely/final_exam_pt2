@@ -144,9 +144,9 @@ a {
 }
 
 .container_image img{
-
-    height: 20px;
+    height: 35px;
 }
+
 
 .research_section{
     background-color: white;
@@ -157,6 +157,20 @@ a {
     flex-direction: row;
     align-items: center;
     gap: 1vw;
+}
+.research_section button{
+    border: none;
+    background-color: transparent;
+    height:35px ;
+}
+.research_section p{
+    font-weight: 800;
+    margin-bottom: 2vh;
+}
+
+.research_section input{
+    width: 138px;
+    height: 25px;
 }
 
 @keyframes intro_image{
