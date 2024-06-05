@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Oxygen";
+    font-size: 0.9 rem;
+}
+
+.reservation_left_side{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 16vh;
+}
+
+.reservation_right_side{    
+    width: 50%;
+    background-color: rgb(247, 202, 247);
+    margin-bottom: -8vh;
+}
+
+.reservation{
+    font-size: 2rem;
+    margin-top: 6vh;
+}
+
+.reservation_container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.reservation_image_container{
+    height: 50vh;
+    overflow: hidden;
+    border: 5px solid white;
+    margin: 5vw;
+    border-radius: 20px;
+    margin-top: 20vh;
+}
+
+.reservation_image_container img{
+    margin-top: -5vh;
+    height: 60vh;
+}
+
+
+
+
+.reservation_text_container{
+    width: 70%;
+}
+
+.reservation_h2{
+    margin-top: 1vh;
+    padding-bottom: 3vh;
+}
+
+.date_de_reservation {
+    margin-top: 4vh;
+}
+
+.date_de_reservation input,
+.date_de_depart input,
+.votre_numero input,
+.votre_nom input{
+    
+    height: 40px;
+    width: 70%;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 3vh;
+    padding-left: 1vw;
+}
+
+.reservation_container button{
+    width: 30%;
+    height: 40px;
+    margin-top: 3vh;
+    border: none;
+    background-color: rgb(158, 42, 158);
+    color: white;
+    font-size: 1.2rem;
+}
+
