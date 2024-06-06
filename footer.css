@@ -1,21 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-body{
-    font-family: "Oxygen";
-    font-size: 0.9 rem;
-    height: 10000px;
-}
 
 footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     padding-bottom: 3vh;
     border-top-left-radius:150px;
     background-color: white;
@@ -48,8 +32,4 @@ footer img{
     flex-direction: column;
     text-align: center;
     gap: 1vh;
-}
-
-.footer_middle_side a{
-    color: black;
 }
