@@ -8,6 +8,7 @@
 body{
     font-family: "Oxygen";
     font-size: 0.9 rem;
+    height: 20000px;
 }
 .navbar{
     display: flex;
@@ -15,6 +16,8 @@ body{
     justify-content: space-between;
     margin-top: 3vh;
     background-color: transparent;
+    position: sticky;
+    top: 3dvh;
 }
 
 .logo{
