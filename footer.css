@@ -12,7 +12,7 @@ body{
 }
 
 footer{
-    position: sticky;
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
@@ -48,4 +48,8 @@ footer img{
     flex-direction: column;
     text-align: center;
     gap: 1vh;
+}
+
+.footer_middle_side a{
+    color: black;
 }
