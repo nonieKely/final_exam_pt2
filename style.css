@@ -77,6 +77,7 @@ body {
     justify-content: center;
     display: flex;
     align-items: center;
+    color: white;
 }
 
 .contact {
@@ -265,12 +266,7 @@ a {
     }
 }
 
-.reset-scroll-effects {
-    transition: none !important;
-    transform: none !important;
-    opacity: 1 !important;
 
-}
 
 @media screen and (max-width : 1000px) {
     *{
@@ -392,6 +388,4 @@ a {
         color: white;
         height: 40px;
     }
-
-    
 }

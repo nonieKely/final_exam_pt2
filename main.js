@@ -14,8 +14,8 @@ window.addEventListener('scroll', function () {
     if (scrollPositionIn > elementTopPosition) {
 
         index.style.transition = 'transform 1s, opacity 1s';
-        index.style.transform = 'scale(0)';
-        index.style.opacity = '0';
+        index.style.transform = 'scale(1)';
+        index.style.opacity = '1';
     }
 
     else if (scrollPositionIn < elementTopPosition) {
@@ -25,8 +25,8 @@ window.addEventListener('scroll', function () {
     }
     else {
         index.style.transition = 'transform 1s, opacity 1s';
-        index.style.transform = 'scale(0)';
-        index.style.opacity = '0';
+        index.style.transform = 'scale(1)';
+        index.style.opacity = '1';
     }
 });
 
@@ -292,50 +292,6 @@ bottom_image2.addEventListener('mouseout', function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function resetScrollEffects() {
-    const elements = [
-        document.getElementById('index'),
-        document.querySelector('.nos_services_intro'),
-        ...document.querySelectorAll('.content_reverse'),
-        ...document.querySelectorAll('.content'),
-        document.querySelector('.container_room'),
-        document.querySelector('.tarifs_container'),
-        document.querySelector('.reservation_left_side'),
-        document.querySelector('.reservation_right_side'),
-        document.querySelector('.localisation')
-    ];
-
-    elements.forEach(element => {
-        element.classList.add('reset-scroll-effects');
-    });
-}
-
-window.addEventListener('resize', function() {
-    if (window.innerWidth < 1000) {
-        resetScrollEffects();
-    }
-});
 
 
 
