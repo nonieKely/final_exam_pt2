@@ -86,7 +86,7 @@ window.addEventListener('scroll', function () {
 });
 
 
-const content= document.querySelectorAll('.content');
+const content = document.querySelectorAll('.content');
 
 window.addEventListener('scroll', function () {
     content.forEach(element => {
@@ -234,10 +234,10 @@ window.addEventListener('scroll', function () {
 
     if (scrollPositionIn > elementTopPosition) {
         localisation.style.transition = 'transform 1s, opacity 1s';
-        localisation.style.opacity = 1; 
+        localisation.style.opacity = 1;
     } else {
         localisation.style.transition = 'transform 1s, opacity 1s';
-        localisation.style.opacity = 0; 
+        localisation.style.opacity = 0;
     }
 });
 
@@ -248,74 +248,126 @@ const bottom_image1 = document.querySelector('.bottom_image1');
 const top_image2 = document.querySelector('.top_image2');
 const bottom_image2 = document.querySelector('.bottom_image2');
 
-top_image1.addEventListener('mouseover', function() {
+top_image1.addEventListener('mouseover', function () {
     top_image1.style.width = '200%';
 });
-top_image2.addEventListener('mouseover', function() {
+top_image2.addEventListener('mouseover', function () {
     top_image2.style.width = '200%';
 
 });
-bottom_image1.addEventListener('mouseover', function() {
+bottom_image1.addEventListener('mouseover', function () {
     bottom_image1.style.width = '200%';
 });
-bottom_image2.addEventListener('mouseover', function() {
+bottom_image2.addEventListener('mouseover', function () {
     bottom_image2.style.width = '200%';
 
 });
 
 
 
-top_image1.addEventListener('mouseout', function() {
+top_image1.addEventListener('mouseout', function () {
     top_image1.style.width = '35vw';
 });
-top_image2.addEventListener('mouseout', function() {
+top_image2.addEventListener('mouseout', function () {
     top_image2.style.width = '23vw';
 });
-bottom_image1.addEventListener('mouseout', function() {
+bottom_image1.addEventListener('mouseout', function () {
     bottom_image1.style.width = '25vw';
 });
-bottom_image2.addEventListener('mouseout', function() {
+bottom_image2.addEventListener('mouseout', function () {
     bottom_image2.style.width = '33vw';
 });
 
 
 
-window.addEventListener('scroll', function () {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function resetScrollEffects() {
+    const elements = [
+        document.getElementById('index'),
+        document.querySelector('.nos_services_intro'),
+        ...document.querySelectorAll('.content_reverse'),
+        ...document.querySelectorAll('.content'),
+        document.querySelector('.container_room'),
+        document.querySelector('.tarifs_container'),
+        document.querySelector('.reservation_left_side'),
+        document.querySelector('.reservation_right_side'),
+        document.querySelector('.localisation')
+    ];
+
+    elements.forEach(element => {
+        element.classList.add('reset-scroll-effects');
+    });
+}
+
+window.addEventListener('resize', function() {
     if (window.innerWidth < 1000) {
-        // Supprimer les animations ici
-        index.style.transform = 'none';
-        nos_services_intro.style.transform = 'none';
-        content_reverse.forEach(element => {
-            element.style.transform = 'none';
-        });
-
-        index.style.opacity = '1';
-        nos_services_intro.style.opacity = '1';
-        element.style.opacity = '1';
-        container_room.style.opacity = '1';
-        tarifs_container.style.opacity = '1';
-        reservation_left_side.style.opacity = '1';
-        reservation_right_side.style.opacity = '1';
-        localisation.style.opacity = 1; 
-
-
-
-        content.forEach(element => {
-            element.style.transform = 'none';
-        });
-        index.style.opacity = '1';
-        nos_services_intro.style.opacity = '1';
-        element.style.opacity = '1';
-        container_room.style.opacity = '1';
-        tarifs_container.style.opacity = '1';
-        reservation_left_side.style.opacity = '1';
-        reservation_right_side.style.opacity = '1';
-        localisation.style.opacity = 1;  // Pour cacher l'élément
-    } else {
-        // Rétablir les animations si la largeur est >= 1000px
-        // Vous pouvez mettre votre code d'animation ici
+        resetScrollEffects();
     }
 });
 
-// Ajoutez le reste de votre code d'animation ici
-// Assurez-vous de définir les transitions appropriées dans votre CSS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -103,7 +103,9 @@
 }
 
 @media screen and (max-width: 700px) {
-
+    .container_room{
+        margin-top: 15dvh;
+    }
     .room_image_container {
         height: auto;
         display: flex;

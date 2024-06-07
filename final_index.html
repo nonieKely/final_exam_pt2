@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="responsive_V1.css">
-    <!-- 
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="localisation.css">
     <link rel="stylesheet" href="reservation.css">
     <link rel="stylesheet" href="tarifs.css">
-    <link rel="stylesheet" href="room.css">-->
+    <link rel="stylesheet" href="room.css">
     <link rel="stylesheet" href="nos_services.css">
     <link rel="stylesheet" href="style.css">
 
@@ -23,8 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 
 
-
-
+    <script src="main.js" defer></script>
 
     <title>Le lotus bungalow</title>
 </head>
@@ -49,19 +47,18 @@
         <div class="left">
             
             <a href="#index"><img src="images/Logosansfond.svg" alt="logo" class="logo"></a>
-            <a href="">A propos</a>
-            <a href="">Nos chambres</a>
-            <a href="">Nos services</a>
+            <a href="#index">A propos</a>
+            <a href="#room">Nos chambres</a>
+            <a href="#nos_services_pages">Nos services</a>
             
         </div>
         <div class="buttons">
-            <button class="reserver">
-
+            <a href="#reservation" class="reserver">
                 Reserver
-            </button>
-            <button class="contact">
+            </a>
+            <a href="#contact" class="contact">
                 Contactez-nous
-            </button>
+            </a>
             
         </div>
         <div class="burger_menu">
@@ -270,8 +267,8 @@
 
 
 
-<!--
-    <div class="container_room">
+
+    <div class="container_room" id="room">
         <h1>
             Une vue sur nos chambres
         </h1>
@@ -350,7 +347,7 @@
 
 
 
-    <div class="reservation_container">
+    <div class="reservation_container" id="reservation">
         <div class="reservation_left_side">
             <div class="reservation_text_container">
                 <h2 class="reservation">Réservation</h2>
@@ -431,7 +428,7 @@
 
 
     <footer>
-        <div class="footer_container">
+        <div class="footer_container" id="contact">
             <div class="footer_left_side">
                 <img src="images/Logosansfond.svg" alt="logo">
                 <p>
@@ -454,4 +451,4 @@
 
 </body>
 
-</html>-->
+</html>

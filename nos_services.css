@@ -208,7 +208,7 @@
 @media screen and (max-width : 1000px) {
     
     .nos_services_intro {
-       
+       margin-top: 10dvh;
         flex-direction: column-reverse;
         height: 100dvh;
         width: 10dvw;
