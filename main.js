@@ -1,4 +1,10 @@
 const index = document.getElementById('index');
+const navbar = document.querySelector('.navbar');
+const  burger_menu = document.querySelector('.burger_menu');
+
+function touch(){
+    navbar.classList.toggle('vertical_navbar');
+}
 
 window.addEventListener('scroll', function () {
     const elementTop = index.getBoundingClientRect().top;
