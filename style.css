@@ -1,18 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
 ::-webkit-scrollbar {
-    width: 0.1px; 
+    width: 0.1px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #ccc; 
+    background-color: #ccc;
 }
 
-body{
+body {
     font-family: "Oxygen";
     font-size: 0.9 rem;
     overflow-x: hidden;
 }
-.navbar{
+
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,32 +28,32 @@ body{
     z-index: 10000000;
 }
 
-.logo{
+.logo {
     height: 75px;
 }
 
-.left{
+.left {
     width: 50%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-top: -2vh; 
+    margin-top: -2vh;
 }
 
-.left a{
+.left a {
     text-decoration: none;
     color: rgb(133, 52, 209);
 }
 
 .left a:hover,
-.buttons button:hover{
+.buttons button:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
 
 
-.buttons{
+.buttons {
     z-index: 100000;
     display: flex;
     flex-direction: row;
@@ -56,40 +63,40 @@ body{
     margin-right: 4vw;
 }
 
-.buttons button{
-    
-    font-size:1rem;
+.buttons button {
+    font-size: 1rem;
 }
 
-.contact{
+.contact {
     border: none;
     background-color: rgb(166, 79, 248);
     width: 150px;
     height: 40px;
     z-index: 10000;
-    
+
 }
 
-.contact p{
+.contact p {
     color: white;
 }
 
-.reserver{
+.reserver {
     width: 120px;
     height: 40px;
     border: 2px solid white;
-    background-color: transparent;  
+    background-color: transparent;
 }
 
-.reserver p{
+.reserver p {
     color: white;
 }
 
-#index{
+#index {
     display: flex;
     flex-direction: row;
 }
-.left_side{
+
+.left_side {
     width: 50%;
     padding-left: 5vw;
     margin-top: 10vh;
@@ -98,12 +105,14 @@ body{
     justify-content: start;
     gap: 3vh;
 }
+
 .container_image,
 .right_side,
-.research_section{
+.research_section {
     z-index: 1;
 }
-.tittle{
+
+.tittle {
     font-size: 3vw;
     animation: intro_text 1.2s;
     display: flex;
@@ -113,12 +122,12 @@ body{
 }
 
 
-.description{
+.description {
     width: 70%;
     animation: intro_text 1.2s;
 }
 
-.more button{
+.more {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,23 +136,35 @@ body{
     border: none;
     background-color: rgb(226, 63, 204);
     animation: intro_text 1.2s;
+    text-align: center;
+    align-content: center;
 }
+/*
+.more {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}*/
 
 a {
     text-decoration: none;
 }
 
-.more p{
+.more p {
     color: white;
     background-color: transparent;
-    text-decoration-line: none; 
+    text-decoration-line: none;
     font-size: 1rem;
 }
 
-.container_image{
+.container_image {
     position: relative;
     z-index: -2;
-    margin-top:-15vh;
+    margin-top: -15vh;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -153,14 +174,14 @@ a {
     width: 100%;
     box-shadow: 4px 8px 20px 1px grey;
     animation: intro_image 2s;
-    
+
 }
 
-.container_image img{
+.container_image img {
     height: 35px;
 }
 
-.research_section{
+.research_section {
     background-color: white;
     height: 80px;
     padding-left: 5vw;
@@ -170,47 +191,48 @@ a {
     align-items: center;
     gap: 1vw;
 }
-.research_section button{
+
+.research_section button {
     border: none;
     background-color: transparent;
-    height:35px ;
+    height: 35px;
 }
-.research_section p{
+
+.research_section p {
     font-weight: 800;
     margin-bottom: 2vh;
 }
 
-.research_section input{
+.research_section input {
     width: 138px;
     height: 25px;
 }
 
-@keyframes intro_image{
-    0%{
+@keyframes intro_image {
+    0% {
         margin-top: -95vh;
-    }40%{
+    }
+
+    40% {
         margin-top: -15vh;
     }
-    60%{
+
+    60% {
         margin-top: -25vh;
     }
-    100%{
+
+    100% {
         margin-top: -15vh;
     }
 }
 
-@keyframes intro_text{
-    from{
+@keyframes intro_text {
+    from {
         margin-left: -50vw;
-    }to{
+    }
+
+    to {
         margin-left: 0vw;
     }
 }
 
-@media screen and (max-width : 700px) {
-    .navbar{
-        background-color: blue;
-        width: 140%;
-    }
-    
-}
