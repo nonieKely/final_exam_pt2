@@ -5,6 +5,12 @@
     scroll-behavior: smooth;
 }
 
+:root{
+    --purple: rgb(148,91,252);
+    --pink : rgb(243,60,252);
+    --green : rgb(116,188,68);
+}
+
 
 ::-webkit-scrollbar {
     width: 8px; 
@@ -136,7 +142,7 @@ body {
     width: 150px;
     height: 40px;
     border: none;
-    background-color: rgb(226, 63, 204);
+    background-color:var(--pink);
     animation: intro_text 1.2s;
     text-align: center;
     align-content: center;
@@ -310,7 +316,6 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: red;
         height: 50vh;
         width: 100dvw;
         justify-content: start;

@@ -1,3 +1,9 @@
+:root{
+    --purple: rgb(148,91,252);
+    --pink : rgb(243,60,252);
+    --green : rgb(116,188,68);
+}
+
 .tarifs_h1_container{
     display: flex;
     flex-direction: row;
@@ -11,7 +17,7 @@
 .tarifs_h1_container hr{
     width: 3.25%;
     height: 1%;
-    border: 1px solid green;
+    border: 1px solid var(--green);
     margin-left: 10%;
 }
 .tarifs_container{
@@ -51,7 +57,7 @@
     display: flex;
     flex-direction: column;
     gap: 2vh;
-    background-color: pink;
+    background-color:rgb(247, 162, 252);
     padding: 5vh;
 }
 

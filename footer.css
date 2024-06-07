@@ -1,9 +1,14 @@
+:root{
+    --purple: rgb(148,91,252);
+    --pink : rgb(243,60,252);
+    --green : rgb(116,188,68);
+}
 
 footer{
     padding-bottom: 3vh;
     border-top-left-radius:150px;
     background-color: white;
-    box-shadow: inset 1px 1px 100px 1px rgb(118, 248, 67);
+    box-shadow: inset 1px 1px 100px 1px var(--green);
 }
 footer img{
     height: 70px;
