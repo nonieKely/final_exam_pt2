@@ -33,3 +33,24 @@ footer img{
     text-align: center;
     gap: 1vh;
 }
+
+@media screen and ( max-width : 1000px) {
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+    footer{
+        border-radius:0;
+        margin-left: 0vw;
+        font-size: 0.7rem;
+    }
+
+    .footer_container{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -200,6 +200,10 @@ a {
     height: 35px;
 }
 
+.left_side a{
+    color: white;
+    
+}
 .research_section p {
     font-weight: 800;
     margin-bottom: 2vh;
@@ -307,7 +311,7 @@ a {
         flex-direction: column;
         align-items: center;
         background-color: red;
-        height: 40vh;
+        height: 50vh;
         width: 100dvw;
         justify-content: start;
         align-content: center;
@@ -315,5 +319,10 @@ a {
     .more{
         position: relative;
         height: 50dvh;
+    }
+
+    .left_side a{
+        color: white;
+        padding: 2vw;
     }
 }
