@@ -14,8 +14,8 @@ window.addEventListener('scroll', function () {
     if (scrollPositionIn > elementTopPosition) {
 
         index.style.transition = 'transform 1s, opacity 1s';
-        index.style.transform = 'scale(0)';
-        index.style.opacity = '0';
+        index.style.transform = 'scale(1)';
+        index.style.opacity = '1';
     }
 
     else if (scrollPositionIn < elementTopPosition) {
@@ -25,8 +25,8 @@ window.addEventListener('scroll', function () {
     }
     else {
         index.style.transition = 'transform 1s, opacity 1s';
-        index.style.transform = 'scale(0)';
-        index.style.opacity = '0';
+        index.style.transform = 'scale(1)';
+        index.style.opacity = '1';
     }
 });
 
@@ -92,7 +92,7 @@ window.addEventListener('scroll', function () {
 });
 
 
-const content= document.querySelectorAll('.content');
+const content = document.querySelectorAll('.content');
 
 window.addEventListener('scroll', function () {
     content.forEach(element => {
@@ -240,10 +240,10 @@ window.addEventListener('scroll', function () {
 
     if (scrollPositionIn > elementTopPosition) {
         localisation.style.transition = 'transform 1s, opacity 1s';
-        localisation.style.opacity = 1; 
+        localisation.style.opacity = 1;
     } else {
         localisation.style.transition = 'transform 1s, opacity 1s';
-        localisation.style.opacity = 0; 
+        localisation.style.opacity = 0;
     }
 });
 
@@ -254,74 +254,82 @@ const bottom_image1 = document.querySelector('.bottom_image1');
 const top_image2 = document.querySelector('.top_image2');
 const bottom_image2 = document.querySelector('.bottom_image2');
 
-top_image1.addEventListener('mouseover', function() {
+top_image1.addEventListener('mouseover', function () {
     top_image1.style.width = '200%';
 });
-top_image2.addEventListener('mouseover', function() {
+top_image2.addEventListener('mouseover', function () {
     top_image2.style.width = '200%';
 
 });
-bottom_image1.addEventListener('mouseover', function() {
+bottom_image1.addEventListener('mouseover', function () {
     bottom_image1.style.width = '200%';
 });
-bottom_image2.addEventListener('mouseover', function() {
+bottom_image2.addEventListener('mouseover', function () {
     bottom_image2.style.width = '200%';
 
 });
 
 
 
-top_image1.addEventListener('mouseout', function() {
+top_image1.addEventListener('mouseout', function () {
     top_image1.style.width = '35vw';
 });
-top_image2.addEventListener('mouseout', function() {
+top_image2.addEventListener('mouseout', function () {
     top_image2.style.width = '23vw';
 });
-bottom_image1.addEventListener('mouseout', function() {
+bottom_image1.addEventListener('mouseout', function () {
     bottom_image1.style.width = '25vw';
 });
-bottom_image2.addEventListener('mouseout', function() {
+bottom_image2.addEventListener('mouseout', function () {
     bottom_image2.style.width = '33vw';
 });
 
 
 
-window.addEventListener('scroll', function () {
-    if (window.innerWidth < 1000) {
-        // Supprimer les animations ici
-        index.style.transform = 'none';
-        nos_services_intro.style.transform = 'none';
-        content_reverse.forEach(element => {
-            element.style.transform = 'none';
-        });
-
-        index.style.opacity = '1';
-        nos_services_intro.style.opacity = '1';
-        element.style.opacity = '1';
-        container_room.style.opacity = '1';
-        tarifs_container.style.opacity = '1';
-        reservation_left_side.style.opacity = '1';
-        reservation_right_side.style.opacity = '1';
-        localisation.style.opacity = 1; 
 
 
 
-        content.forEach(element => {
-            element.style.transform = 'none';
-        });
-        index.style.opacity = '1';
-        nos_services_intro.style.opacity = '1';
-        element.style.opacity = '1';
-        container_room.style.opacity = '1';
-        tarifs_container.style.opacity = '1';
-        reservation_left_side.style.opacity = '1';
-        reservation_right_side.style.opacity = '1';
-        localisation.style.opacity = 1;  // Pour cacher l'élément
-    } else {
-        // Rétablir les animations si la largeur est >= 1000px
-        // Vous pouvez mettre votre code d'animation ici
-    }
-});
 
-// Ajoutez le reste de votre code d'animation ici
-// Assurez-vous de définir les transitions appropriées dans votre CSS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

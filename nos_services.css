@@ -10,6 +10,7 @@
     width: 100dvw;
     height: 340dvh;
     transition: transform 0.5s ease;
+    margin-top: 10dvh;
 }
 
 .nos_services_intro {
@@ -213,7 +214,7 @@
 @media screen and (max-width : 1000px) {
     
     .nos_services_intro {
-       
+       margin-top: 10dvh;
         flex-direction: column-reverse;
         height: 100dvh;
         width: 10dvw;
