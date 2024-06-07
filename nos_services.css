@@ -1,3 +1,9 @@
+:root{
+    --purple: rgb(148,91,252);
+    --pink : rgb(243,60,252);
+    --green : rgb(116,188,68);
+}
+
 #nos_services_pages {
     display: flex;
     flex-direction: column;
@@ -47,7 +53,7 @@
 
 .text_1 p,
 .text-1 p {
-    color: rgb(133, 52, 209);
+    color: var(--purple);
 }
 
 .text_1 hr {
@@ -201,7 +207,6 @@
 .burger {
     width: 20dvw;
     height: 20dvh;
-    background-color: red;
     z-index: 100000000000000000000000000000000000;
 }
 

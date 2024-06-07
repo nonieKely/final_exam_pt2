@@ -1,3 +1,9 @@
+:root{
+    --purple: rgb(148,91,252);
+    --pink : rgb(243,60,252);
+    --green : rgb(116,188,68);
+}
+
 .reservation_left_side{
     width: 50%;
     display: flex;
@@ -5,9 +11,10 @@
     margin-left: 16vh;
 }
 
+
 .reservation_right_side{    
     width: 50%;
-    background-color: rgb(247, 202, 247);
+    background-color:rgb(249, 168, 253) ;
     margin-bottom: -8vh;
 }
 
@@ -72,7 +79,7 @@
     height: 40px;
     margin-top: 3vh;
     border: none;
-    background-color: rgb(158, 42, 158);
+    background-color: var(--purple);
     color: white;
     font-size: 1.2rem;
 }

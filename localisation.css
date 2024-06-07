@@ -1,3 +1,9 @@
+:root{
+    --purple: rgb(148,91,252);
+    --pink : rgb(243,60,252);
+    --green : rgb(116,188,68);
+}
+
 .localisation {
     display: flex;
     flex-direction: column;
@@ -14,19 +20,19 @@
     text-align: right;
     margin-bottom: 1.5%;
     margin-left: 80%;
-    color: rgb(133, 52, 209);
+    color: var(--purple);
 }
 
 span {
-    color: rgb(131, 0, 131);
+    color: var(--purple);
 }
 
 .span1 {
-    color: chartreuse;
+    color:var(--green);
 }
 
 .p1 {
-    color:  rgb(133, 52, 209);
+    color: var(--purple);
 }
 
 .localisation>hr {
