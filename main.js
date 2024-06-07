@@ -277,3 +277,45 @@ bottom_image1.addEventListener('mouseout', function() {
 bottom_image2.addEventListener('mouseout', function() {
     bottom_image2.style.width = '33vw';
 });
+
+
+
+window.addEventListener('scroll', function () {
+    if (window.innerWidth < 1000) {
+        // Supprimer les animations ici
+        index.style.transform = 'none';
+        nos_services_intro.style.transform = 'none';
+        content_reverse.forEach(element => {
+            element.style.transform = 'none';
+        });
+
+        index.style.opacity = '1';
+        nos_services_intro.style.opacity = '1';
+        element.style.opacity = '1';
+        container_room.style.opacity = '1';
+        tarifs_container.style.opacity = '1';
+        reservation_left_side.style.opacity = '1';
+        reservation_right_side.style.opacity = '1';
+        localisation.style.opacity = 1; 
+
+
+
+        content.forEach(element => {
+            element.style.transform = 'none';
+        });
+        index.style.opacity = '1';
+        nos_services_intro.style.opacity = '1';
+        element.style.opacity = '1';
+        container_room.style.opacity = '1';
+        tarifs_container.style.opacity = '1';
+        reservation_left_side.style.opacity = '1';
+        reservation_right_side.style.opacity = '1';
+        localisation.style.opacity = 1;  // Pour cacher l'élément
+    } else {
+        // Rétablir les animations si la largeur est >= 1000px
+        // Vous pouvez mettre votre code d'animation ici
+    }
+});
+
+// Ajoutez le reste de votre code d'animation ici
+// Assurez-vous de définir les transitions appropriées dans votre CSS

@@ -1,5 +1,4 @@
-
-#tarifs h1{
+.tarifs_h1_container{
     display: flex;
     flex-direction: row;
     text-align: left;
@@ -8,7 +7,8 @@
     align-content: center;
     align-items: center;
 }
-h1 hr{
+
+.tarifs_h1_container hr{
     width: 3.25%;
     height: 1%;
     border: 1px solid green;
