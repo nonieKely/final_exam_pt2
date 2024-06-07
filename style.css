@@ -31,9 +31,20 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 3vh;
+    padding-top: 3vh;
     background-color: transparent;
     z-index: 10000000;
+    transition: all 1s;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.white_navbar{
+    background-color: var(--green);
+    padding-top: 3vh;
+    transition: all 1.5s;
 }
 
 .logo {

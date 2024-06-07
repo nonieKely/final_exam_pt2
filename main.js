@@ -6,6 +6,15 @@ burger_menu.addEventListener('click', function(){
     navbar.classList.toggle('vertical_navbar')
 })
 
+window.addEventListener('scroll', function(){
+    navbar.classList.add('white_navbar')
+})
+
+window.addEventListener('scrollend', function(){
+    navbar.classList.remove('white_navbar')
+})
+
+
 window.addEventListener('scroll', function () {
     const elementTop = index.getBoundingClientRect().top;
     const scrollPositionIn = window.scrollY + window.innerHeight + 400;
